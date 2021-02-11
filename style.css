@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+   background:#fafcfd;
+   color:#151926;
+   line-height: 1.6;
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem;
+}
+
+img{
+   width:100%;
+   border-radius: 50%;
+}
+
+a{
+   text-decoration: none;
+}
+
+.logo{
+   width:35px;
+   height:35px;
+}
+
+.header{
+   width:50%;
+   margin:0 auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2.5rem;
+}
+
+.container h1{
+   font-size: 1.4rem;
+   margin-bottom: 1.5rem;
+}
+
+#form{
+   width:100%;
+   position: relative;
+   box-shadow: 2px 1px 5px rgba(0, 0, 0, .2);
+}
+
+#form input{
+   color:grey;
+   padding:1rem 3rem;
+   width:100%;
+   border-radius: 15px;
+   border:0;
+   font-size: .9rem;
+}
+
+#search{
+   position: absolute;
+   left:20px;
+   top:50%;
+   transform: translate(-50%,-50%);
+   color:#000;
+   opacity: .7;
+}
+
+h2{
+   text-align: left;
+   font-size: 1.1rem;
+   margin-bottom: 1rem;
+}
+
+.articles{
+   padding:1rem;
+   margin:0 auto;
+}
+
+.articles-inner{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 1rem;
+}
+
+.article{
+   background-color: #fff;
+   padding:1rem 1rem 1rem .7rem; 
+   box-shadow: 0 5px 7px rgba(0, 0, 0, .2);
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   grid-gap: 1rem;
+}
+
+.article-content h3{
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+
+h5{
+   font-weight: 400;
+   opacity:.8;
+   margin-bottom: .5rem;
+}
+
+.article-content p{
+   font-size: .9rem;
+}
+
+.btns{
+   width:100%;
+   grid-column: 1/6;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:.1rem;
+}
+
+.bookmark-btn{
+   color:rgb(21, 25, 38,.7);
+   font-size: .85rem;
+}
+
+.bookmark-btn i{
+   margin-right: .3rem;
+   font-size: .85rem;
+}
+
+.api-docs{
+   background: #141a31;
+   color:#fff;
+   padding:.4rem 1rem;
+   border-radius: 5px;
+   font-size: .85rem;
+}
+
+.api-docs i{
+   margin-left:.3rem;
+   font-size: .95rem;
+}
+
+/* Media Queries */
+@media(max-width:800px){
+   .articles-inner{
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .header{
+      width:70%;
+   }
+}
+
+@media(max-width:600px){
+   .articles-inner{
+      grid-template-columns:1fr;
+   }
+
+   .header{
+      width:90%;
+   }
+}
+
